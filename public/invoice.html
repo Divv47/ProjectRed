@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+  <link rel="stylesheet" href="css/invoice.css">
+</head>
+<body>
+  <div class="invoice" id="invoice">
+    <h1 class="shop-name">Gulab MOBILE SHOP</h1>
+    <p class="shop-details">
+      Deals in: All Type of Mobile,& All Type Mobile Accessories<br>
+      Shop No. 34-A, Himalaya Complex, Akashganga Road, Supela-490021 (CG.)
+    </p>
+    <div class="customer-info">
+      <p>No. _________ Date: __________</p>
+      <p>M/s: <span id="customer-name">__________________________</span></p>
+      <p>Address: <span id="customer-address">____________________</span></p>
+    </div>
+    <table class="invoice-table">
+      <thead>
+        <tr>
+          <th>Qty</th>
+          <th>Description of Goods</th>
+          <th>Rate</th>
+          <th>Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="quantity">1</td>
+          <td>
+            Model No.: <span id="model-no">________________</span><br>
+            IMEI No.: <span id="imei-no">________________</span>
+          </td>
+          <td><span id="rate">0</span></td>
+          <td><span id="amount">0</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="total">Total: <span id="total">0</span></p>
+    <p class="amount-words">Amount in Words: ____________________________</p>
+    <p class="terms">Terms: Goods once sold will not be taken back.</p>
+    <div class="signature">
+      <p>Customer Signature: ______________________</p>
+      <p>For Gulab Mobile Shop: ___________________</p>
+    </div>
+  </div>
+  <button onclick="printInvoice()">Print Invoice</button>
+  <script src="/js/invoice.js"></script>
+</body>
+</html>
